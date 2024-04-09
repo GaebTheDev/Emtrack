@@ -35,14 +35,22 @@ export class LoginComponent {
       res => {
         if (res.length >= 1) {
           if (res[0].password === password) {
+            console.log(res[0].email);
+            console.log(res[0].fname);
+            console.log(res[0].lname);
+            console.log(res[0].id);
+            console.log(res[0].password);
+            
             this.messageService.add({ severity: 'success', summary: 'Login successful', detail: 'You will now be redirected to the dashboard' })
+            sessionStorage.setItem('email', email as string);
+            sessionStorage.setItem('firstName', res[0].fname as string);
+            sessionStorage.setItem('lastName', res[0].lname as string);
             this.router.navigate(['dashboard']);
           }else{
             this.messageService.add({ severity: 'error', summary: 'Login unsuccessful', detail: 'You have entered the wrong password' })
           }
         } else {
           this.messageService.add({ severity: 'error', summary: 'Login unsuccessful', detail: 'User not found' })
-
         }
       },
       err => { this.messageService.add({ severity: 'error', summary: 'Login unsuccessful', detail: 'An error has occurred' }) });

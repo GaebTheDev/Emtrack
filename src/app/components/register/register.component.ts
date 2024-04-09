@@ -54,6 +54,7 @@ export class RegisterComponent {
       postData.email = postData.email?.toLowerCase();
       this.authservice.registerUser(postData as User).subscribe(
         res => {
+          console.log(res);
           this.messageService.add({ severity: 'success', summary: "Registration successful", detail: "Your account has been created" });
           this.router.navigate(['login']);
         },
