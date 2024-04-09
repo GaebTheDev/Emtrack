@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": "d22c",
+      "fname": "Royjon Gaebriel",
+      "lname": "Mislang",
+      "email": "gaeb.mislang.dev@gmail.com",
+      "password": "123123123"
+    },
+    {
+      "id": "c9b4",
+      "fname": "Gaeb",
+      "lname": "Mislang",
+      "email": "fdasf@fdsa",
+      "password": "123123123"
+    },
+    {
+      "id": "96c1",
+      "fname": "Royjon Gaebriel",
+      "lname": "Mislang",
+      "email": "gaeb.mislang.dev@gmail.com",
+      "password": "123123123"
+    }
+  ]
+}

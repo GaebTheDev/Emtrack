@@ -1,8 +1,8 @@
 <div class="text-center">
-    <h1 class="text-5xl md:text-6xl">Emtrack</h1>
+    <h1 class="text-5xl md:text-6xl font-merriweather">Emtrack</h1>
 </div>
 <form [formGroup]="loginForm" class="m-3">
-    <p-card header="Login" styleClass="py-2 sm:py-3 md:py-4 lg:py-6 px-4 md:px-6 text-center">
+    <p-card header="Login" styleClass="py-2 sm:py-3 md:py-4 lg:py-6 px-4 md:px-6 text-center font-libre-franklin">
         <div class="field text-left">
             <label for="email">Email</label>
             <input type="text" pInputText id="email" class="w-full" formControlName="email" />
@@ -11,7 +11,7 @@
             <label for="password">Password</label>
             <input type="password" pInputText id="password" class="w-full" formControlName="password" />
         </div>
-        <p-button label="Sign in" styleClass="w-10 text-center"  (click)="showLoginError()"></p-button>
+        <p-button label="Sign in" styleClass="w-10 text-center" (click)="login()" [disabled]="loginForm.invalid"></p-button>
         <div>
             <p>Not a member? <a routerLink="/register">register here!</a></p>
         </div>

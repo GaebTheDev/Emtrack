@@ -1,1 +1,31 @@
-<p>register works!</p>
+<div class="text-center">
+    <h1 class="text-5xl md:text-6xl font-merriweather">Emtrack</h1>
+</div>
+<form [formGroup]="registrationForm" class="m-3" (ngSubmit)="register()">
+    <p-card header="Register" styleClass="py-2 sm:py-3 md:py-4 lg:py-6 px-4 md:px-6 text-center font-libre-franklin">
+        <div class="field text-left">
+            <label for="fname">First name</label>
+            <input type="text" pInputText id="fname" class="w-full" formControlName="fname" />
+        </div>
+        <div class="field text-left">
+            <label for="lname">Last name</label>
+            <input type="text" pInputText id="lname" class="w-full" formControlName="lname" />
+        </div>
+        <div class="field text-left">
+            <label for="email">Email</label>
+            <input type="text" pInputText id="email" class="w-full" formControlName="email" />
+        </div>
+        <div class="field text-left">
+            <label for="password">Password</label>
+            <input type="password" pInputText id="password" class="w-full" formControlName="password" />
+        </div>
+        <div class="field text-left">
+            <label for="cpassword">Confirm Password</label>
+            <input type="password" pInputText id="cpassword" class="w-full" formControlName="cpassword" />
+        </div>
+        <p-button label="Register account" type="submit" styleClass="w-10 text-center"></p-button>
+        <div>
+            <p>Already have an account? <a routerLink="/login">Sign in here!</a></p>
+        </div>
+    </p-card>
+</form>

@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -12,29 +14,39 @@ export class LoginComponent {
     email: ['', [Validators.required, Validators.email]],
     password: ['', [Validators.required]]
   });
-  errorTitle: string = '';
-  errorMessage: string = '';
 
-  constructor(private fb:FormBuilder,private messageService: MessageService){}
+  constructor(
+    private fb: FormBuilder,
+    private messageService: MessageService,
+    private router: Router,
+    private authService: AuthService) { }
 
-  get email(){
+  get email() {
     return this.loginForm.controls['email'];
   }
 
-  get password(){
+  get password() {
     return this.loginForm.controls['password'];
   }
 
-  showLoginError(){
-    if (this.email.errors?.['required']) {
-      console.log(this.email);
-      this.messageService.add({ severity: 'error', summary: 'Invalid email', detail: 'Please enter a valid email' });
-    }else if(this.password.errors?.['required']){
-      console.log(this.password);
-      this.messageService.add({ severity: 'error', summary: 'Invalid password', detail: 'Please enter a valid password' });
-    }else{
-      this.messageService.add({severity: 'success', summary: 'Login successful', detail: 'You will now be redirected to the dashboard' })
-    }
-    
+  login() {
+    const { email, password } = this.loginForm.value;
+    this.authService.getUserByEmail(email as string).subscribe(
+      res => {
+        if (res.length >= 1) {
+          if (res[0].password === password) {
+            this.messageService.add({ severity: 'success', summary: 'Login successful', detail: 'You will now be redirected to the dashboard' })
+            this.router.navigate(['dashboard']);
+          }else{
+            this.messageService.add({ severity: 'error', summary: 'Login unsuccessful', detail: 'You have entered the wrong password' })
+          }
+        } else {
+          this.messageService.add({ severity: 'error', summary: 'Login unsuccessful', detail: 'User not found' })
+
+        }
+      },
+      err => { this.messageService.add({ severity: 'error', summary: 'Login unsuccessful', detail: 'An error has occurred' }) });
+
+
   }
 }
