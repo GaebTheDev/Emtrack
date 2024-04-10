@@ -14,6 +14,9 @@ import { ButtonModule } from 'primeng/button';
 import { ToastModule } from 'primeng/toast';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { provideHttpClient, withFetch } from '@angular/common/http';
+import { HomeComponent } from './components/dashboard/home/home.component';
+import { EmployeesComponent } from './components/dashboard/employees/employees.component';
+import { CompanyComponent } from './components/dashboard/company/company.component';
 
 
 @NgModule({
@@ -22,7 +25,10 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
     SidebarComponent,
     LoginComponent,
     RegisterComponent,
-    DashboardComponent
+    DashboardComponent,
+    HomeComponent,
+    EmployeesComponent,
+    CompanyComponent
   ],
   imports: [
     BrowserModule,

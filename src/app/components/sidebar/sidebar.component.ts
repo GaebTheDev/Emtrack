@@ -9,16 +9,16 @@ import { Router } from '@angular/router';
 export class SidebarComponent {
   constructor(private router: Router) { }
 
+  onHomeClicked(){
+    this.router.navigate(['dashboard/home']);
+  }
+
   onCompanyClicked() {
-    console.log("company");
+    this.router.navigate(['dashboard/company']);
   }
 
   onEmployeesClicked() {
-    console.log("employees");
-  }
-
-  onReportsClicked(){
-    console.log("reports");
+    this.router.navigate(['dashboard/employees']);
   }
 
   logout() {

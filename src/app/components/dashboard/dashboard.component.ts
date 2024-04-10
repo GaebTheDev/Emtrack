@@ -8,8 +8,4 @@ import { Router } from '@angular/router';
 })
 export class DashboardComponent {
   constructor(private router: Router){}
-  
-  firstName : string = sessionStorage.getItem("firstName")!;
-  lastName : string = sessionStorage.getItem("lastName")!;
-  email : string = sessionStorage.getItem("email")!;
 }
