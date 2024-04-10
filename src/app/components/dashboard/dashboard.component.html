@@ -1,4 +1,7 @@
-<div class="bg-primary-reverse flex h-full">
-    <app-sidebar class="h-full w-4 md:w-3 xl:w-2 bg-primary hidden sm:block"></app-sidebar>
-    <router-outlet></router-outlet>
+<app-sidebar class="fixed h-full w-4 md:w-3 xl:w-2 bg-primary hidden sm:block"></app-sidebar>
+<app-topbar class="sm:hidden"></app-topbar>
+<div class="bg-primary-reverse flex h-full w-full justify-content-end">
+    <div class="w-full sm:w-8 md:w-9 xl:w-10">
+        <router-outlet></router-outlet>
+    </div>
 </div>

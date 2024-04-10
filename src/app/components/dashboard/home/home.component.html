@@ -1,1 +1,35 @@
-<p>home works!</p>
+<div class="grid m-0 h-full p-4">
+    <!-- Male to Female  -->
+    <div class="col-12 md:col-5 lg:col-4">
+        <p-card class="flex flex-column justify-content-center h-full">
+            <p-chart type="pie" [data]="pieData" [options]="pieOptions"></p-chart>
+        </p-card>
+    </div>
+    <!-- Tasks  -->
+    <div class="col-12 md:col-7 lg:col-8">
+        <p-card class="flex flex-column justify-content-center align-content-center h-full">
+            <p-chart type="line" [data]="lineData" [options]="lineOptions"></p-chart>
+        </p-card>
+    </div>
+    <!-- Employee  -->
+    <div class="col-12 lg:col-6">
+        <p-card>
+            <p-chart type="bar" [data]="barData" [options]="barOptions"></p-chart>
+        </p-card>
+    </div>
+    <!-- Project Status  -->
+    <div class="col-12 md:col-6">
+        <p-card>
+            <p-chart type="doughnut" [data]="doughnutData" [options]="doughnutOptions"></p-chart>
+        </p-card>
+    </div>
+    <!-- Overall Assessment  -->
+    <div class="col-12 md:col-6 lg:col-12">
+        <p-card class="w-full">
+            <div>
+                <p-chart type="radar" [data]="radarData" [options]="radarOptions"></p-chart>
+            </div>
+
+        </p-card>
+    </div>
+</div>

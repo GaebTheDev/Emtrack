@@ -17,6 +17,8 @@ import { provideHttpClient, withFetch } from '@angular/common/http';
 import { HomeComponent } from './components/dashboard/home/home.component';
 import { EmployeesComponent } from './components/dashboard/employees/employees.component';
 import { CompanyComponent } from './components/dashboard/company/company.component';
+import { ChartModule } from 'primeng/chart';
+import { TopbarComponent } from './components/topbar/topbar.component';
 
 
 @NgModule({
@@ -28,7 +30,8 @@ import { CompanyComponent } from './components/dashboard/company/company.compone
     DashboardComponent,
     HomeComponent,
     EmployeesComponent,
-    CompanyComponent
+    CompanyComponent,
+    TopbarComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,8 @@ import { CompanyComponent } from './components/dashboard/company/company.compone
     ReactiveFormsModule,
     ButtonModule,
     ToastModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ChartModule
   ],
   providers: [
     provideClientHydration(),
