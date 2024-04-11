@@ -19,7 +19,8 @@ import { EmployeesComponent } from './components/dashboard/employees/employees.c
 import { CompanyComponent } from './components/dashboard/company/company.component';
 import { ChartModule } from 'primeng/chart';
 import { TopbarComponent } from './components/topbar/topbar.component';
-
+import { SidebarModule } from 'primeng/sidebar';
+import { SmSidebarComponent } from './components/sm-sidebar/sm-sidebar.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { TopbarComponent } from './components/topbar/topbar.component';
     HomeComponent,
     EmployeesComponent,
     CompanyComponent,
-    TopbarComponent
+    TopbarComponent,
+    SmSidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import { TopbarComponent } from './components/topbar/topbar.component';
     ButtonModule,
     ToastModule,
     BrowserAnimationsModule,
-    ChartModule
+    ChartModule,
+    SidebarModule
   ],
   providers: [
     provideClientHydration(),

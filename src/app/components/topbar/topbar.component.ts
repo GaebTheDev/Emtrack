@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-topbar',
@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './topbar.component.css'
 })
 export class TopbarComponent {
+
+  @Output()
+  barClicked : EventEmitter<boolean> = new EventEmitter<boolean>;
+
+  onBarsClicked(){
+    this.barClicked.emit(true);
+  }
 
 }
