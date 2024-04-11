@@ -34,15 +34,19 @@
                 <div *ngFor="let emp of employees">
                     <div class="flex align-items-center justify-content-between w-full">
                         <div class="flex align-items-center">
-                            <div class="bg-auto bg-no-repeat bg-center bg-primary border-circle h-4rem w-4rem lg:h-6rem lg:w-6rem bg-cover mx-2"
+                            <div class="bg-auto bg-no-repeat bg-center bg-primary border-circle h-3rem w-3rem lg:h-4rem lg:w-4rem bg-cover mx-2"
                                 style="background-image: url({{emp.imgSrc}});"></div>
-                            <p class="ml-4 lg:text-xl">{{emp.fname}} {{emp.lname}}</p>
+                            <div>
+                                <p class="ml-2 sm:ml-4 lg:text-xl font-libre-franklin">{{emp.fname}} {{emp.lname}}</p>
+                                <p class="ml-2 sm:ml-4 lg:text-xl font-libre-franklin text-gray-400 md:hidden">
+                                    {{emp.position}}</p>
+                            </div>
                         </div>
-
-                        <p class="lg:text-xl text-right font-libre-franklin text-gray-400">{{emp.position}}</p>
+                        <p class="ml-2 sm:ml-4 lg:text-xl font-libre-franklin text-gray-400 hidden md:flex">
+                            {{emp.position}}</p>
 
                     </div>
-                    <hr class="border-teal-100 my-5">
+                    <hr class="border-teal-100 my-2">
                 </div>
             </div>
         </div>
