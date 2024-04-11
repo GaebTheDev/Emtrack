@@ -17,7 +17,7 @@ export class EmployeesComponent {
   }
 
   employees : any = undefined;
-  viewMode: string = 'grid';
+  viewMode: string = 'list';
   viewOptions: any[] = [
     { icon: 'pi pi-table', value: 'grid' },
     { icon: 'pi pi-list', value: 'list' }

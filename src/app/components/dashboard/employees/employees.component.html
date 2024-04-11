@@ -28,12 +28,23 @@
         </div>
     </ng-container>
 
-
-
-
     <ng-template #listview>
-        <div class="mt-2">
-            <div *ngFor="let emp of employees">{{emp.fname}}</div>
+        <div class="mt-4 lg:mt-6 flex justify-content-center">
+            <div class="w-11">
+                <div *ngFor="let emp of employees">
+                    <div class="flex align-items-center justify-content-between w-full">
+                        <div class="flex align-items-center">
+                            <div class="bg-auto bg-no-repeat bg-center bg-primary border-circle h-4rem w-4rem lg:h-6rem lg:w-6rem bg-cover mx-2"
+                                style="background-image: url({{emp.imgSrc}});"></div>
+                            <p class="ml-4 lg:text-xl">{{emp.fname}} {{emp.lname}}</p>
+                        </div>
+
+                        <p class="lg:text-xl text-right font-libre-franklin text-gray-400">{{emp.position}}</p>
+
+                    </div>
+                    <hr class="border-teal-100 my-5">
+                </div>
+            </div>
         </div>
 
     </ng-template>
