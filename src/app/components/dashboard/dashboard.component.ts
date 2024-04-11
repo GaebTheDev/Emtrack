@@ -13,11 +13,9 @@ export class DashboardComponent {
 
   onBarClicked() {
     this.sidebarVisible = true;
-    console.log(this.sidebarVisible);
   }
 
   onExitClicked() {
     this.sidebarVisible = false;
-    console.log(this.sidebarVisible);
   }
 }

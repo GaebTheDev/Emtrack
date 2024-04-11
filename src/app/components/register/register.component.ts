@@ -12,6 +12,7 @@ import { Router } from '@angular/router';
   styleUrl: './register.component.css',
 })
 export class RegisterComponent {
+  //kung ano yung andito, yun yung napapasa sa db.json
   registrationForm = this.fb.group({
     fname: ['', [Validators.required]],
     lname: ['', [Validators.required]],

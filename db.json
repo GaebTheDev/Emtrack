@@ -7,5 +7,172 @@
       "email": "test@gmail.com",
       "password": "asdfasdf"
     }
+  ],
+  "employees": [
+    {
+      "id": "1001",
+      "imgSrc": "https://t3.ftcdn.net/jpg/03/67/46/48/360_F_367464887_f0w1JrL8PddfuH3P2jSPlIGjKU2BI0rn.jpg",
+      "position": "Lead Developer",
+      "fname": "Jessica",
+      "lname": "Pearson",
+      "email": "JP@gmail.com",
+      "sex": "female",
+      "cpNumber": "09614525698",
+      "birthMonth": "december",
+      "birthYear": 2001,
+      "birthDay": 21,
+      "tasksFinishedPerDay": [
+        4,
+        3,
+        6,
+        7
+      ],
+      "hireStatus": "active"
+    },
+    {
+      "id": "1002",
+      "imgSrc": "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
+      "position": "Product Manager",
+      "fname": "Byron",
+      "lname": "Hernandez",
+      "email": "BH@gmail.com",
+      "sex": "male",
+      "cpNumber": "09614145698",
+      "birthMonth": "april",
+      "birthYear": 2012,
+      "birthDay": 15,
+      "tasksFinishedPerDay": [
+        2,
+        3,
+        2,
+        4
+      ],
+      "hireStatus": "active"
+    },
+    {
+      "id": "1003",
+      "imgSrc": "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "position": "Sales Director",
+      "fname": "Mike",
+      "lname": "Hevans",
+      "email": "MH@gmail.com",
+      "sex": "male",
+      "cpNumber": "05621325698",
+      "birthMonth": "december",
+      "birthYear": 2003,
+      "birthDay": 8,
+      "tasksFinishedPerDay": [],
+      "hireStatus": "inactive"
+    },
+    {
+      "id": "1001",
+      "imgSrc": "https://t3.ftcdn.net/jpg/03/67/46/48/360_F_367464887_f0w1JrL8PddfuH3P2jSPlIGjKU2BI0rn.jpg",
+      "position": "Lead Developer",
+      "fname": "Jessica",
+      "lname": "Pearson",
+      "email": "JP@gmail.com",
+      "sex": "female",
+      "cpNumber": "09614525698",
+      "birthMonth": "december",
+      "birthYear": 2001,
+      "birthDay": 21,
+      "tasksFinishedPerDay": [
+        4,
+        3,
+        6,
+        7
+      ],
+      "hireStatus": "active"
+    },
+    {
+      "id": "1002",
+      "imgSrc": "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
+      "position": "Product Manager",
+      "fname": "Byron",
+      "lname": "Hernandez",
+      "email": "BH@gmail.com",
+      "sex": "male",
+      "cpNumber": "09614145698",
+      "birthMonth": "april",
+      "birthYear": 2012,
+      "birthDay": 15,
+      "tasksFinishedPerDay": [
+        2,
+        3,
+        2,
+        4
+      ],
+      "hireStatus": "active"
+    },
+    {
+      "id": "1003",
+      "imgSrc": "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "position": "Sales Director",
+      "fname": "Mike",
+      "lname": "Hevans",
+      "email": "MH@gmail.com",
+      "sex": "male",
+      "cpNumber": "05621325698",
+      "birthMonth": "december",
+      "birthYear": 2003,
+      "birthDay": 8,
+      "tasksFinishedPerDay": [],
+      "hireStatus": "inactive"
+    },
+    {
+      "id": "1001",
+      "imgSrc": "https://t3.ftcdn.net/jpg/03/67/46/48/360_F_367464887_f0w1JrL8PddfuH3P2jSPlIGjKU2BI0rn.jpg",
+      "position": "Lead Developer",
+      "fname": "Jessica",
+      "lname": "Pearson",
+      "email": "JP@gmail.com",
+      "sex": "female",
+      "cpNumber": "09614525698",
+      "birthMonth": "december",
+      "birthYear": 2001,
+      "birthDay": 21,
+      "tasksFinishedPerDay": [
+        4,
+        3,
+        6,
+        7
+      ],
+      "hireStatus": "active"
+    },
+    {
+      "id": "1002",
+      "imgSrc": "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
+      "position": "Product Manager",
+      "fname": "Byron",
+      "lname": "Hernandez",
+      "email": "BH@gmail.com",
+      "sex": "male",
+      "cpNumber": "09614145698",
+      "birthMonth": "april",
+      "birthYear": 2012,
+      "birthDay": 15,
+      "tasksFinishedPerDay": [
+        2,
+        3,
+        2,
+        4
+      ],
+      "hireStatus": "active"
+    },
+    {
+      "id": "1003",
+      "imgSrc": "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "position": "Sales Director",
+      "fname": "Mike",
+      "lname": "Hevans",
+      "email": "MH@gmail.com",
+      "sex": "male",
+      "cpNumber": "05621325698",
+      "birthMonth": "december",
+      "birthYear": 2003,
+      "birthDay": 8,
+      "tasksFinishedPerDay": [],
+      "hireStatus": "inactive"
+    }
   ]
 }

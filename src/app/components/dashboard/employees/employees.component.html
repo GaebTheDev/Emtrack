@@ -1,1 +1,41 @@
-<p>employees works!</p>
+<div class="flex flex-column h-full w-full p-2 sm:p-4">
+    <p class="text-3xl font-semibold font-merriweather">Employee List</p>
+    <div class="flex justify-content-between mt-2">
+        <p-button icon="pi pi-plus" label="Add"></p-button>
+        <p-selectButton [options]="viewOptions" [(ngModel)]="viewMode" optionValue="value" [allowEmpty]=false
+            (onChange)="onViewChanged()">
+            <ng-template let-item pTemplate>
+                <i [class]="item.icon"></i>
+            </ng-template>
+        </p-selectButton>
+    </div>
+    <div class="p-input-icon-left w-full pt-2">
+        <i class="pi pi-search text-lg"></i>
+        <input type="text" pInputText class="w-full text-lg" placeholder="search employee" />
+    </div>
+    <ng-container *ngIf="viewMode == 'grid'; else listview">
+        <div class="grid mt-2 p-2 p-0">
+            <p-card *ngFor="let emp of employees" class="col-12 md:col-6 lg:col-4 xl:col-3 p-1">
+                <div class="flex lg:flex-column lg:align-items-center">
+                    <div class="bg-auto bg-no-repeat bg-center bg-primary border-circle h-4rem w-4rem bg-cover"
+                        style="background-image: url({{emp.imgSrc}});"></div>
+                    <div class="flex flex-column justify-content-center lg:text-center lg:pt-2">
+                        <p class="ml-2 text-lg font-merriweather text-primary">{{emp.fname}} {{emp.lname}}</p>
+                        <p class="ml-2 font-libre-franklin text-gray-400">{{emp.position}}</p>
+                    </div>
+                </div>
+            </p-card>
+        </div>
+    </ng-container>
+
+
+
+
+    <ng-template #listview>
+        <div class="mt-2">
+            <div *ngFor="let emp of employees">{{emp.fname}}</div>
+        </div>
+
+    </ng-template>
+
+</div>

@@ -21,6 +21,8 @@ import { ChartModule } from 'primeng/chart';
 import { TopbarComponent } from './components/topbar/topbar.component';
 import { SidebarModule } from 'primeng/sidebar';
 import { SmSidebarComponent } from './components/sm-sidebar/sm-sidebar.component';
+import { SelectButtonModule } from 'primeng/selectbutton';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -41,11 +43,14 @@ import { SmSidebarComponent } from './components/sm-sidebar/sm-sidebar.component
     CardModule,
     InputTextModule,
     ReactiveFormsModule,
+    FormsModule,
     ButtonModule,
     ToastModule,
     BrowserAnimationsModule,
     ChartModule,
-    SidebarModule
+    SidebarModule,
+    SelectButtonModule
+    
   ],
   providers: [
     provideClientHydration(),
