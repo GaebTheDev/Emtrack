@@ -63,116 +63,28 @@
       "birthDay": 8,
       "tasksFinishedPerDay": [],
       "hireStatus": "inactive"
-    },
+    }
+  ],
+  "company": [
     {
-      "id": "1001",
-      "imgSrc": "https://t3.ftcdn.net/jpg/03/67/46/48/360_F_367464887_f0w1JrL8PddfuH3P2jSPlIGjKU2BI0rn.jpg",
-      "position": "Lead Developer",
-      "fname": "Jessica",
-      "lname": "Pearson",
-      "email": "JP@gmail.com",
-      "sex": "female",
-      "cpNumber": "09614525698",
-      "birthMonth": "december",
-      "birthYear": 2001,
-      "birthDay": 21,
-      "tasksFinishedPerDay": [
-        4,
-        3,
-        6,
-        7
+      "id": "3001",
+      "name": "K Company",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos blanditiis repudiandae quaerat vero excepturi, dolor corporis ut fugit libero labore quas autem magni sed itaque. Perferendis consequatur minima fuga enim.",
+      "address": [
+        {
+          "street": "Benitez",
+          "streetno": 102,
+          "barangay": "Immaculate Conception",
+          "city": "Malabon",
+          "zipcode": 1002
+        }
       ],
-      "hireStatus": "active"
-    },
-    {
-      "id": "1002",
-      "imgSrc": "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
-      "position": "Product Manager",
-      "fname": "Byron",
-      "lname": "Hernandez",
-      "email": "BH@gmail.com",
-      "sex": "male",
-      "cpNumber": "09614145698",
-      "birthMonth": "april",
-      "birthYear": 2012,
-      "birthDay": 15,
-      "tasksFinishedPerDay": [
-        2,
-        3,
-        2,
-        4
-      ],
-      "hireStatus": "active"
-    },
-    {
-      "id": "1003",
-      "imgSrc": "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "position": "Sales Director",
-      "fname": "Mike",
-      "lname": "Hevans",
-      "email": "MH@gmail.com",
-      "sex": "male",
-      "cpNumber": "05621325698",
-      "birthMonth": "december",
-      "birthYear": 2003,
-      "birthDay": 8,
-      "tasksFinishedPerDay": [],
-      "hireStatus": "inactive"
-    },
-    {
-      "id": "1001",
-      "imgSrc": "https://t3.ftcdn.net/jpg/03/67/46/48/360_F_367464887_f0w1JrL8PddfuH3P2jSPlIGjKU2BI0rn.jpg",
-      "position": "Lead Developer",
-      "fname": "Jessica",
-      "lname": "Pearson",
-      "email": "JP@gmail.com",
-      "sex": "female",
-      "cpNumber": "09614525698",
-      "birthMonth": "december",
-      "birthYear": 2001,
-      "birthDay": 21,
-      "tasksFinishedPerDay": [
-        4,
-        3,
-        6,
-        7
-      ],
-      "hireStatus": "active"
-    },
-    {
-      "id": "1002",
-      "imgSrc": "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
-      "position": "Product Manager",
-      "fname": "Byron",
-      "lname": "Hernandez",
-      "email": "BH@gmail.com",
-      "sex": "male",
-      "cpNumber": "09614145698",
-      "birthMonth": "april",
-      "birthYear": 2012,
-      "birthDay": 15,
-      "tasksFinishedPerDay": [
-        2,
-        3,
-        2,
-        4
-      ],
-      "hireStatus": "active"
-    },
-    {
-      "id": "1003",
-      "imgSrc": "https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "position": "Sales Director",
-      "fname": "Mike",
-      "lname": "Hevans",
-      "email": "MH@gmail.com",
-      "sex": "male",
-      "cpNumber": "05621325698",
-      "birthMonth": "december",
-      "birthYear": 2003,
-      "birthDay": 8,
-      "tasksFinishedPerDay": [],
-      "hireStatus": "inactive"
+      "phonenumber": "09457851458",
+      "imgSrc": "https://st3.depositphotos.com/43745012/44906/i/450/depositphotos_449066958-stock-photo-financial-accounting-logo-financial-logo.jpg",
+      "ownerid": "f076",
+      "establishedDay": 21,
+      "establishedMonth": "june",
+      "establishedYear": 1997
     }
   ]
 }

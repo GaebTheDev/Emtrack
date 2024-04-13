@@ -1,1 +1,9 @@
-<p>company works!</p>
+<div class="flex flex-column h-full w-full p-4 sm:p-6 align-items-center sm:align-items-start">
+    <div class="flex flex-column align-items-center">
+        <img src="{{ company.imgSrc }}" class="h-10rem w-10rem border-circle border-3 border-primary">
+        <p class="font-merriweather font-bold mt-2 text-4xl text-center">{{ company.name }}</p>
+    </div>
+
+    <h3 class="font-normal font-merriweather text-left text-gray-600">Company Description</h3>
+    <p class="text-lg text-justify">{{ company.description}}</p>
+</div>
