@@ -1,18 +1,18 @@
 <div class="flex flex-column h-full w-full p-4 sm:p-6 align-items-center sm:align-items-start">
-    <div class="flex flex-column align-items-center">
-        <img src="{{ company.imgSrc }}" class="h-10rem w-10rem border-circle border-3 border-primary">
-        <p class="font-merriweather font-bold mt-2 text-4xl text-center">{{ company.name }}</p>
-    </div>
+    <div class="flex flex-column align-items-center lg:align-items-start">
+        <img src="{{ company.imgSrc }}" class="h-10rem w-10rem lg:h-12rem lg:w-12rem border-circle border-3 border-primary">
+        <p class="font-merriweather font-bold mt-2 text-4xl lg:text-5xl text-center">{{ company.name }}</p>
+    </div>  
 
-    <h3 class="font-normal font-merriweather text-left text-gray-600">Company Description</h3>
-    <p class="text-lg text-center">{{ company.description}}</p>
+    <h3 class="font-normal lg:text-lg font-merriweather text-left text-gray-600 mb-2">Company Description</h3>
+    <p class="text-lg lg:text-xl text-center sm:text-justify">{{ company.description}}</p>
 
-    <h3 class="font-normal font-merriweather text-left text-gray-600 mb-1">Established in</h3>
-    <p class="text-lg text-center">{{ company.establishedMonth.charAt(0).toUpperCase() + company.establishedMonth.slice(1) }} {{ company.establishedDay }}, {{ company.establishedYear}} </p>
+    <h3 class="font-normal lg:text-lg font-merriweather text-left text-gray-600 mb-1">Established in</h3>
+    <p class="text-lg lg:text-xl text-center sm:text-left">{{ company.establishedMonth.charAt(0).toUpperCase() + company.establishedMonth.slice(1) }} {{ company.establishedDay }}, {{ company.establishedYear}} </p>
 
-    <h3 class="font-normal font-merriweather text-left text-gray-600 mb-1">Address</h3>
-    <p class="text-lg text-center">{{ company.address[0].streetno}} {{ company.address[0].street}} {{ company.address[0].city}}, {{ company.address[0].zipcode}}</p>
+    <h3 class="font-normal lg:text-lg font-merriweather text-left text-gray-600 mb-1">Address</h3>
+    <p class="text-lg lg:text-xl text-center sm:text-left">{{ company.address[0].streetno}} {{ company.address[0].street}} {{ company.address[0].city}}, {{ company.address[0].zipcode}}</p>
 
-    <h3 class="font-normal font-merriweather text-left text-gray-600 mb-1">Owner</h3>
-    <p class="text-lg text-center">{{ companyOwner.fname }} {{ companyOwner.lname}} </p>
+    <h3 class="font-normal lg:text-lg font-merriweather text-left text-gray-600 mb-1">Owner</h3>
+    <p class="text-lg lg:text-xl text-center sm:text-left">{{ companyOwner.fname }} {{ companyOwner.lname}} </p>
 </div>
