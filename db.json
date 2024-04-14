@@ -2,8 +2,8 @@
   "users": [
     {
       "id": "f076",
-      "fname": "test",
-      "lname": "test",
+      "fname": "Bradley",
+      "lname": "Johnson",
       "email": "test@gmail.com",
       "password": "asdfasdf"
     }
@@ -68,8 +68,8 @@
   "company": [
     {
       "id": "3001",
-      "name": "K Company",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos blanditiis repudiandae quaerat vero excepturi, dolor corporis ut fugit libero labore quas autem magni sed itaque. Perferendis consequatur minima fuga enim.",
+      "name": "BrightFusion Solutions",
+      "description": "BrightFusion Solutions is a leading provider of innovative software solutions for businesses worldwide. Established in 2010, we have been at the forefront of digital transformation, offering cutting-edge products and services to help companies thrive in the digital age.",
       "address": [
         {
           "street": "Benitez",

@@ -5,5 +5,14 @@
     </div>
 
     <h3 class="font-normal font-merriweather text-left text-gray-600">Company Description</h3>
-    <p class="text-lg text-justify">{{ company.description}}</p>
+    <p class="text-lg text-center">{{ company.description}}</p>
+
+    <h3 class="font-normal font-merriweather text-left text-gray-600 mb-1">Established in</h3>
+    <p class="text-lg text-center">{{ company.establishedMonth.charAt(0).toUpperCase() + company.establishedMonth.slice(1) }} {{ company.establishedDay }}, {{ company.establishedYear}} </p>
+
+    <h3 class="font-normal font-merriweather text-left text-gray-600 mb-1">Address</h3>
+    <p class="text-lg text-center">{{ company.address[0].streetno}} {{ company.address[0].street}} {{ company.address[0].city}}, {{ company.address[0].zipcode}}</p>
+
+    <h3 class="font-normal font-merriweather text-left text-gray-600 mb-1">Owner</h3>
+    <p class="text-lg text-center">{{ companyOwner.fname }} {{ companyOwner.lname}} </p>
 </div>
